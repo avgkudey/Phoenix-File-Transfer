@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="475.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectphoenix.SendToPcController">
+   <children>
+      <Rectangle fx:id="btntwitter" arcHeight="5.0" arcWidth="5.0" height="520.0" opacity="0.9" stroke="TRANSPARENT" strokeType="INSIDE" width="750.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.6857142857142857" startX="0.3476190476190476">
+               <stops>
+                  <Stop color="#6ee9ff" />
+                  <Stop color="#6ee9ff" offset="0.210727969348659" />
+                  <Stop color="#214b7f" offset="0.8735632183908035" />
+                  <Stop color="#05254def" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="344.0" fitWidth="242.0" layoutX="489.0" layoutY="76.0" opacity="0.32" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/projectphoenix/logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnBack" layoutX="32.0" layoutY="351.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="116.0" text="Back" visible="false" />
+      <Button fx:id="btnSend" layoutX="150.0" layoutY="364.0" mnemonicParsing="false" onAction="#send" opacity="0.63" prefHeight="37.0" prefWidth="132.0" style="-fx-background-color: black; -fx-background-radius: 0;" text="Send" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Button>
+      <TableView fx:id="table" layoutX="46.0" layoutY="122.0" opacity="0.63" prefHeight="241.0" prefWidth="425.0" style="-fx-background-color: null;">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="232.0" text="Name" />
+          <TableColumn fx:id="size" minWidth="4.0" prefWidth="63.0" text="Size" />
+            <TableColumn fx:id="path" minWidth="0.0" prefWidth="119.0" text="Path" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="-6.0" text="Phoenix" textFill="#a8a1a1" visible="false">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblFileCount" layoutX="54.0" layoutY="320.0" text="FIle Count" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <VBox fx:id="vbox" layoutX="163.0" layoutY="169.0" prefHeight="180.0" prefWidth="180.0" />
+      <Button layoutX="517.0" layoutY="2.0" mnemonicParsing="false" onAction="#chat" opacity="0.92" prefWidth="58.0" style="-fx-background-color: transparent; -fx-background-radius: 0;" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="62.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/projectphoenix/369378-200.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Rectangle fx:id="rect" arcHeight="5.0" arcWidth="5.0" height="475.0" layoutX="302.0" opacity="0.8" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" width="298.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.47619047619047616" startX="0.1952380952380953" startY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#29116e" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Button fx:id="btnSelectFiles" layoutX="184.0" layoutY="179.0" mnemonicParsing="false" onAction="#selectFiles" prefHeight="118.0" prefWidth="149.0" style="-fx-background-color: transparent; -fx-background-radius: 0;" text="Select Files" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="imgadd" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/projectphoenix/add_green.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnChatSend" layoutX="670.0" layoutY="406.0" mnemonicParsing="false" onAction="#sendchat" opacity="0.63" prefHeight="36.0" prefWidth="53.0" style="-fx-background-color: black; -fx-background-radius: 0;" text="Send" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Button>
+      <TextField fx:id="txtIn" layoutX="495.0" layoutY="406.0" opacity="0.63" prefHeight="37.0" prefWidth="175.0" style="-fx-background-color: black; -fx-background-radius: 0;">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <ListView fx:id="tareaOutput" layoutX="495.0" layoutY="107.0" prefHeight="284.0" prefWidth="228.0" style="-fx-background-color: transparent;" />
+      <Label fx:id="lblfileName" layoutX="106.0" layoutY="344.0" opacity="0.63" prefHeight="27.0" prefWidth="269.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="lblPath" layoutX="107.0" layoutY="396.0" opacity="0.63" prefHeight="25.0" prefWidth="269.0" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="lblSize" layoutX="219.0" layoutY="367.0" opacity="0.63" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ImageView fitHeight="70.0" fitWidth="269.0" layoutX="-32.0" layoutY="3.0">
+         <image>
+            <Image url="@/projectphoenix/water mark s.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="163.0" layoutY="475.0" opacity="0.39" prefHeight="17.0" prefWidth="425.0" text="Share your files simply and faster">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnExit" layoutX="687.0" layoutY="-1.0" mnemonicParsing="false" onAction="#exit" opacity="0.97" prefHeight="38.0" prefWidth="54.0" style="-fx-background-color: transparent; -fx-background-radius: 0;" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip autoHide="true" opacity="0.82" text="Click here to exit" />
+         </tooltip>
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/projectphoenix/5a059a909cf05203c4b6045b.png" />
+               </image>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="649.0" layoutY="12.0" mnemonicParsing="false" onAction="#minimize" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/projectphoenix/020925-simple-red-glossy-icon-symbols-shapes-minimize.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

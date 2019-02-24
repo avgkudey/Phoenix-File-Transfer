@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="475.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectphoenix.ReceiverConnectionPermissionController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="520.0" opacity="0.9" stroke="TRANSPARENT" strokeType="INSIDE" width="750.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.6857142857142857" startX="0.3476190476190476">
+               <stops>
+                  <Stop color="#6ee9ff" />
+                  <Stop color="#6ee9ff" offset="0.210727969348659" />
+                  <Stop color="#214b7f" offset="0.8735632183908035" />
+                  <Stop color="#05254def" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <TextField fx:id="txtThisPcIP" layoutX="409.0" layoutY="353.0" prefHeight="25.0" prefWidth="185.0" visible="false" />
+      <Button fx:id="btnSet" layoutX="521.0" layoutY="395.0" mnemonicParsing="false" onAction="#ipset" text="Set" textFill="WHITE" visible="false" />
+      <Label layoutX="458.0" layoutY="458.0" opacity="0.63" text="System IP" textFill="#ababab" />
+      <Button fx:id="btnBack" layoutX="457.0" layoutY="93.0" mnemonicParsing="false" onAction="#back" text="Back" visible="false" />
+      <Label fx:id="lblIP" layoutX="523.0" layoutY="458.0" opacity="0.63" textFill="#ababab" />
+      <TextField fx:id="txtSecurityKey" alignment="CENTER" layoutX="420.0" layoutY="313.0" opacity="0.63" prefHeight="40.0" prefWidth="132.0" style="-fx-background-color: black; -fx-background-radius: 0; -fx-text-fill: white;">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></TextField>
+      <Button fx:id="btnSubmit" layoutX="552.0" layoutY="313.0" mnemonicParsing="false" onAction="#securityKeySubmit" opacity="0.63" prefHeight="39.0" prefWidth="67.0" style="-fx-background-color: black; -fx-background-radius: 0;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Button>
+      <VBox fx:id="vbox" layoutX="465.0" layoutY="160.0" prefHeight="110.0" prefWidth="110.0" />
+      <Button fx:id="btnReceiver" layoutX="635.0" layoutY="21.0" mnemonicParsing="false" onAction="#btnreceiver" />
+      <ImageView fitHeight="269.0" fitWidth="269.0" layoutX="43.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/projectphoenix/ss.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="236.0" prefHeight="34.0" prefWidth="312.0" text="Waiting For a  Sender" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Button layoutX="687.0" layoutY="-4.0" mnemonicParsing="false" onAction="#exit" opacity="0.97" prefHeight="38.0" prefWidth="54.0" style="-fx-background-color: transparent; -fx-background-radius: 0;" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip autoHide="true" opacity="0.82" text="Click here to exit" />
+         </tooltip>
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/projectphoenix/5a059a909cf05203c4b6045b.png" />
+               </image>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="649.0" layoutY="9.0" mnemonicParsing="false" onAction="#minimize" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/projectphoenix/020925-simple-red-glossy-icon-symbols-shapes-minimize.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

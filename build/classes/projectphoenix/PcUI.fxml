@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" maxWidth="750.0" prefHeight="520.0" prefWidth="750.0" scaleShape="false" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectphoenix.PcUIController">
+   <children>
+      <Rectangle fx:id="btntwitter" arcHeight="5.0" arcWidth="5.0" height="520.0" opacity="0.9" stroke="TRANSPARENT" strokeType="INSIDE" width="750.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.6857142857142857" startX="0.3476190476190476">
+               <stops>
+                  <Stop color="#6ee9ff" />
+                  <Stop color="#6ee9ff" offset="0.210727969348659" />
+                  <Stop color="#214b7f" offset="0.8735632183908035" />
+                  <Stop color="#05254def" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Button fx:id="btnAbout" layoutX="130.0" layoutY="476.0" mnemonicParsing="false" onAction="#aboutUs" opacity="0.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: black; -fx-background-radius: 0;" text="I" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip autoHide="true" opacity="0.82" text="Click here to view developer info" />
+         </tooltip></Button>
+      <Label fx:id="lblSysIP" layoutX="153.0" layoutY="451.0" opacity="0.63" textFill="#868686" />
+      <ImageView fx:id="imview" fitHeight="179.0" fitWidth="124.0" layoutX="67.0" layoutY="203.0">
+         <effect>
+            <DropShadow height="23.96" offsetY="10.0" radius="13.705" width="32.86" />
+         </effect>
+         <image>
+            <Image url="@/projectphoenix/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="44.0" layoutY="345.0" text="PHOENIX" textFill="#2b324d">
+         <font>
+            <Font name="System Bold Italic" size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="150.0" layoutY="393.0" text="File Transfer" textFill="#682727">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="30.0" layoutY="475.0" mnemonicParsing="false" onAction="#history" opacity="0.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: black; -fx-background-radius: 0;" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Click here to view file receive history" />
+         </tooltip>
+      </Button>
+      <Button layoutX="254.0" layoutY="104.0" mnemonicParsing="false" opacity="0.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: black; -fx-background-radius: 0;" text="?" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip autoHide="true" opacity="0.82" text="Click here to view developer info" />
+         </tooltip>
+      </Button>
+      <Button layoutX="78.0" layoutY="464.0" mnemonicParsing="false" onAction="#errorlog" opacity="0.0" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: black; -fx-background-radius: 0;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Click here to view Error Log" />
+         </tooltip>
+      </Button>
+      <ImageView fx:id="img2" fitHeight="30.0" fitWidth="30.0" layoutX="78.0" layoutY="476.0" mouseTransparent="true">
+         <image>
+            <Image url="@/projectphoenix/20608-200.png" />
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="img3" fitHeight="30.0" fitWidth="30.0" layoutX="130.0" layoutY="475.0" mouseTransparent="true">
+         <image>
+            <Image url="@/projectphoenix/3716.png" />
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="img1" fitHeight="30.0" fitWidth="30.0" layoutX="30.0" layoutY="476.0" mouseTransparent="true">
+         <image>
+            <Image url="@/projectphoenix/32284.png" />
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <Rectangle fx:id="rectSend" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="288.0" layoutX="286.0" layoutY="64.0" stroke="TRANSPARENT" strokeType="INSIDE" width="178.0">
+         <effect>
+            <DropShadow height="71.41" radius="31.4975" width="56.58" />
+         </effect>
+      </Rectangle>
+      <Button fx:id="btnSend" layoutX="305.0" layoutY="69.0" mnemonicParsing="false" onAction="#send" prefHeight="101.0" prefWidth="107.0" style="-fx-background-radius: 0; -fx-background-color: transparent;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip autoHide="true" opacity="0.82" text="Click here to send file" />
+         </tooltip>
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@/projectphoenix/Download-Icon.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label layoutX="341.0" layoutY="208.0" text="SEND" textFill="#387bc3">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="rectReceive" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="314.0" layoutX="454.0" layoutY="51.0" stroke="TRANSPARENT" strokeType="INSIDE" width="189.0">
+         <effect>
+            <DropShadow height="71.41" radius="31.4975" width="56.58" />
+         </effect>
+      </Rectangle>
+      <Button fx:id="btnReceive" layoutX="479.0" layoutY="69.0" mnemonicParsing="false" onAction="#receive" prefHeight="37.0" prefWidth="140.0" style="-fx-background-color: transparent; -fx-background-radius: 0;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip autoHide="true" opacity="0.82" text="Click here to receive file" />
+         </tooltip>
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/projectphoenix/Download-Icon.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label layoutX="499.0" layoutY="208.0" text="RECEIVE" textFill="#387bc3">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="298.0" layoutY="246.0" mouseTransparent="true" prefHeight="92.0" prefWidth="154.0" text="Click here to start file Sending" textAlignment="CENTER" textFill="#4570d7" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="70.0" layoutX="284.0" layoutY="436.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="426.0">
+         <effect>
+            <DropShadow height="71.41" radius="31.4975" width="56.58" />
+         </effect>
+      </Rectangle>
+      <ComboBox fx:id="cmbIP" layoutX="542.0" layoutY="452.0" onAction="#ipselect" prefHeight="42.0" prefWidth="154.0" style="-fx-background-color: ffffff;">
+         <tooltip>
+            <Tooltip text="Select network IP" />
+         </tooltip>
+         <effect>
+            <DropShadow />
+         </effect></ComboBox>
+      <Label layoutX="298.0" layoutY="469.0" text="Select Your Network" textFill="#387bc3">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="92.0" fitWidth="92.0" layoutX="301.0" layoutY="381.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/projectphoenix/rss-512.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="461.0" layoutY="246.0" mouseTransparent="true" prefHeight="92.0" prefWidth="178.0" text="Click here to start file Receiving" textAlignment="CENTER" textFill="#4570d7" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnfacebook" layoutX="20.0" layoutY="13.0" mnemonicParsing="false" onAction="#facebook" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/projectphoenix/facebook-512.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="69.0" layoutY="11.0" mnemonicParsing="false" onAction="#twitter" prefHeight="37.0" prefWidth="30.0" style="-fx-background-color: TRANSPARENT;">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/projectphoenix/twitter-512.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnExit" layoutX="686.0" layoutY="-2.0" mnemonicParsing="false" onAction="#exit" opacity="0.97" prefHeight="38.0" prefWidth="54.0" style="-fx-background-color: transparent; -fx-background-radius: 0;" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip autoHide="true" opacity="0.82" text="Click here to exit" />
+         </tooltip>
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/projectphoenix/5a059a909cf05203c4b6045b.png" />
+               </image>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="648.0" layoutY="11.0" mnemonicParsing="false" onAction="#minimize" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/projectphoenix/020925-simple-red-glossy-icon-symbols-shapes-minimize.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="168.0" layoutY="471.0" mnemonicParsing="false" onAction="#settings" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="38.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/projectphoenix/1241-200.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+   </children>
+</AnchorPane>

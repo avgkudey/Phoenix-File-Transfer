@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="520.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectphoenix.AboutUsController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="520.0" opacity="0.9" stroke="TRANSPARENT" strokeType="INSIDE" width="750.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.6857142857142857" startX="0.3476190476190476">
+               <stops>
+                  <Stop color="#6ee9ff" />
+                  <Stop color="#6ee9ff" offset="0.210727969348659" />
+                  <Stop color="#214b7f" offset="0.8735632183908035" />
+                  <Stop color="#05254def" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fx:id="imgkasun" fitHeight="324.0" fitWidth="388.0" layoutX="33.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/projectphoenix/Userk.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="383.0" layoutY="75.0" text="A.V.G. K. UDAYANGA" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold Italic" size="29.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Label>
+      <Label layoutX="383.0" layoutY="118.0" prefHeight="86.0" prefWidth="310.0" text="Advanced Technological Institute Galle" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Label>
+      <Label layoutX="21.0" layoutY="-4.0" text="Develper Info" textFill="WHITE">
+         <font>
+            <Font size="38.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Button fx:id="btnBack" cancelButton="true" layoutX="78.0" layoutY="360.0" mnemonicParsing="false" onAction="#back" prefHeight="37.0" prefWidth="132.0" style="-fx-background-color: transparent; -fx-background-radius: 0;" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/projectphoenix/back2.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label layoutX="355.0" layoutY="161.0" prefHeight="86.0" prefWidth="348.0" text="Information Technology Department" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="453.0" layoutY="245.0" prefHeight="18.0" prefWidth="170.0" text="TEL 077-3955072" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="378.0" layoutY="284.0" prefHeight="30.0" prefWidth="302.0" text="E-Mail avgk.udey@gmail.com" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

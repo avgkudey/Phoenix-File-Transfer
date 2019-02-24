@@ -1,0 +1,14 @@
+.column-header-background         { -fx-background-color: transparent;     
+                                   -fx-max-height: 0;
+                                   -fx-pref-height:0;
+                                   -fx-min-height:0;
+}
+.willPayRow                       { -fx-background-color: transparent  }
+.wontPayRow                       { -fx-background-color: transparent     }
+.willPayCell                      { -fx-background-color: transparent; }
+.wontPayCell                      { -fx-background-color: transparent   }
+.table-row-cell:empty             { -fx-background-color: transparent;    }
+.table-row-cell:selected             { -fx-text-fill: black;    }
+.table-row-cell                   { -fx-background-color: transparent;    }
+
+.table-row-cell:empty .table-cell { -fx-border-width:     0px;         }
